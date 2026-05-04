@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+steba-pharma-dist.zip
+
+dist/
+node_modules/
