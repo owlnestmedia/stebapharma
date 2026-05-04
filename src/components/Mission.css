@@ -1,0 +1,88 @@
+.mission {
+  background: var(--white);
+  text-align: center;
+}
+
+.mission-box {
+  max-width: 900px;
+  margin: 0 auto 80px;
+  background: var(--bg-light);
+  padding: 60px 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 74, 153, 0.1);
+  position: relative;
+}
+
+.badge {
+  background: var(--primary);
+  color: var(--white);
+  padding: 5px 20px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.mission-title {
+  font-size: 1.8rem;
+  color: var(--primary);
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.pillar-item {
+  padding: 30px;
+  transition: var(--transition);
+}
+
+.pillar-item:hover {
+  transform: translateY(-5px);
+}
+
+.pillar-icon {
+  color: var(--secondary);
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.pillar-item h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.pillar-item p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+@media (max-width: 992px) {
+  .pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .mission-box {
+    padding: 40px 20px;
+    margin-bottom: 50px;
+  }
+  .pillars-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .mission-title {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,100 @@
+.presence {
+  background: var(--bg-light);
+  overflow: hidden;
+}
+
+.presence-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.presence-text {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 40px;
+}
+
+.location-card {
+  display: flex;
+  gap: 20px;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: var(--shadow-sm);
+  width: fit-content;
+  margin-bottom: 40px;
+}
+
+.pin-icon {
+  color: var(--secondary);
+}
+
+.slogan-text {
+  font-size: 1.8rem;
+  color: var(--primary);
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.presence-visual {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.globe-wrapper {
+  position: relative;
+  color: var(--primary);
+  opacity: 0.8;
+}
+
+.marker-mumbai {
+  position: absolute;
+  top: 60%;
+  left: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent);
+  animation: pulse 2s infinite;
+}
+
+.label {
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  background: var(--white);
+  padding: 2px 8px;
+  border-radius: 4px;
+  box-shadow: var(--shadow-sm);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@media (max-width: 992px) {
+  .presence-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+  .location-card {
+    margin: 0 auto 40px;
+  }
+  .globe-icon {
+    width: 250px;
+    height: 250px;
+  }
+}

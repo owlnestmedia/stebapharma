@@ -1,0 +1,87 @@
+.spotlight-diabetic {
+  background: #f1f5f9;
+}
+
+.product-name-diabetic {
+  font-size: 4rem;
+  color: #0f172a;
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+.product-name-diabetic span {
+  font-size: 1.5rem;
+  vertical-align: top;
+}
+
+.brand-tag-diabetic {
+  color: #334155;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+
+.benefits-list-diabetic li {
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+}
+
+.benefits-list-diabetic li::before {
+  content: '✚';
+  position: absolute;
+  left: 0;
+  color: #0f172a;
+}
+
+.feature-pill-diabetic {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #0f172a;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.product-card-3d-diabetic {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  transform: rotateY(15deg);
+}
+
+.product-placeholder-diabetic {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #0f172a 0%, #334155 100%);
+  border-radius: 15px;
+  color: white;
+}
+
+.sf-logo {
+  font-size: 5rem;
+  font-weight: 900;
+  color: white;
+  display: block;
+}
+
+.cta-box-diabetic {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.icon-group-diabetic {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #0f172a;
+  font-weight: 600;
+}

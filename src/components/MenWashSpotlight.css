@@ -1,0 +1,146 @@
+.spotlight-men {
+  background: #f0f4f8;
+}
+
+.reverse {
+  direction: ltr; /* Ensure grid follows standard but we swap columns */
+}
+
+.product-name-blue {
+  font-size: 4rem;
+  color: #003366;
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+.product-name-blue span {
+  font-size: 1.5rem;
+  vertical-align: top;
+}
+
+.brand-tag-blue {
+  color: #004a99;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+
+.benefits-list-blue li {
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+}
+
+.benefits-list-blue li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #004a99;
+  font-weight: 900;
+}
+
+.feature-pill-blue {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #003366;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50px;
+  box-shadow: var(--shadow-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.product-card-3d-blue {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  transform: rotateY(15deg);
+  transition: var(--transition);
+  position: relative;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.product-card-3d-blue:hover {
+  transform: rotateY(0deg) scale(1.02);
+}
+
+.product-placeholder-blue {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #003366 0%, #004a99 100%);
+  border-radius: 15px;
+  color: white;
+}
+
+.m-logo {
+  font-size: 5rem;
+  font-weight: 900;
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.floating-badge-blue {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #00a0e3;
+  color: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(0, 160, 227, 0.3);
+}
+
+.cta-box {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.icon-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #003366;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
+    text-align: center;
+  }
+  .product-name-blue {
+    font-size: 2.8rem;
+  }
+  .benefits-list-blue {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto 30px;
+  }
+  .features-row {
+    justify-content: center;
+  }
+  .icon-group {
+    justify-content: center;
+  }
+  .product-card-3d-blue {
+    transform: none;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,74 @@
+.spotlight-hair {
+  background: #fff5f5;
+}
+
+.product-name-hair {
+  font-size: 4rem;
+  color: #8b0000;
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+.product-name-hair span {
+  font-size: 1.5rem;
+  vertical-align: top;
+}
+
+.brand-tag-hair {
+  color: #8b0000;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+
+.benefits-list-hair li {
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+}
+
+.benefits-list-hair li::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  color: #ff9900;
+}
+
+.feature-pill-hair {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #8b0000;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.product-card-3d-hair {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  transform: rotateY(-15deg);
+  transition: var(--transition);
+}
+
+.product-placeholder-hair {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #8b0000 0%, #a52a2a 100%);
+  border-radius: 15px;
+  color: white;
+}
+
+.h-logo {
+  font-size: 5rem;
+  font-weight: 900;
+  color: white;
+  display: block;
+}

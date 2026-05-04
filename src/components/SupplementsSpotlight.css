@@ -1,0 +1,73 @@
+.spotlight-supp {
+  background: #fffdf0;
+}
+
+.product-name-supp {
+  font-size: 4rem;
+  color: #ff9900;
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+.product-name-supp span {
+  font-size: 1.5rem;
+  vertical-align: top;
+}
+
+.brand-tag-supp {
+  color: #ff9900;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+
+.benefits-list-supp li {
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+}
+
+.benefits-list-supp li::before {
+  content: '✚';
+  position: absolute;
+  left: 0;
+  color: #ff9900;
+}
+
+.feature-pill-supp {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ff9900;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.product-card-3d-supp {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  transform: rotateY(15deg);
+}
+
+.product-placeholder-supp {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #ff9900 0%, #ffcc33 100%);
+  border-radius: 15px;
+  color: white;
+}
+
+.p-logo {
+  font-size: 5rem;
+  font-weight: 900;
+  color: white;
+  display: block;
+}

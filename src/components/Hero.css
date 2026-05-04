@@ -1,0 +1,149 @@
+.hero {
+  position: relative;
+  min-height: 900px;
+  /* Increased height for better spacing */
+  background: url('/images/hero-bg.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding-bottom: 120px;
+  /* Space for the stats box */
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(0, 74, 153, 0.8) 0%, rgba(0, 74, 153, 0.4) 100%);
+  z-index: 1;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 800px;
+  color: var(--white);
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 60px;
+  /* Increased from 40px */
+  opacity: 0.95;
+  font-weight: 300;
+  max-width: 600px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-stats {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white);
+  padding: 40px 0;
+  z-index: 3;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: auto;
+    padding: 100px 0 0; /* Remove bottom padding as stats will follow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-overlay {
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 74, 153, 0.9) 0%, rgba(0, 74, 153, 0.7) 100%);
+  }
+  .hero-container {
+    margin-top: 0;
+    padding-bottom: 60px;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+    margin: 0 auto 40px;
+  }
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    gap: 15px;
+  }
+  .hero-stats {
+    position: relative;
+    width: 100%;
+    background: var(--white);
+    padding: 50px 20px;
+    margin-top: 0;
+    box-shadow: none;
+    border-top: 1px solid rgba(0,0,0,0.05);
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 10px;
+  }
+  .stat-number {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+}

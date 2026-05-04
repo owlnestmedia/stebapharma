@@ -1,0 +1,73 @@
+.spotlight-women {
+  background: #fdf2f8;
+}
+
+.product-name-women {
+  font-size: 4rem;
+  color: #86198f;
+  margin: 10px 0;
+  font-weight: 800;
+}
+
+.product-name-women span {
+  font-size: 1.5rem;
+  vertical-align: top;
+}
+
+.brand-tag-women {
+  color: #86198f;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+
+.benefits-list-women li {
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+}
+
+.benefits-list-women li::before {
+  content: '✿';
+  position: absolute;
+  left: 0;
+  color: #d946ef;
+}
+
+.feature-pill-women {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #86198f;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.product-card-3d-women {
+  background: var(--white);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  transform: rotateY(-15deg);
+}
+
+.product-placeholder-women {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #86198f 0%, #a21caf 100%);
+  border-radius: 15px;
+  color: white;
+}
+
+.gt-logo {
+  font-size: 5rem;
+  font-weight: 900;
+  color: white;
+  display: block;
+}
